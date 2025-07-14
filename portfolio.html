@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Bacon Media</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Swiper CSS for sliders -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <style>
+    .filter-buttons {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .filter-buttons button {
+      margin: 0.3rem;
+      padding: 0.5rem 1rem;
+      font-family: 'Special Elite', monospace;
+      background-color: #7a4e2d;
+      color: #fff0d6;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .filter-buttons button:hover {
+      background-color: #5a3a1b;
+    }
+
+    .gallery-section {
+      display: none;
+    }
+
+    .gallery-section.active {
+      display: block;
+    }
+
+    .swiper {
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 200px;
+      background-color: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Special Elite', monospace;
+      border: 2px dashed #7a4e2d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Bacon Media</h1>
+      <p class="tagline">Sizzling Shots. Crispy Quality.</p>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="decor-line"></div>
+
+      <div class="filter-buttons">
+        <button onclick="filterGallery('weddings')">Weddings</button>
+        <button onclick="filterGallery('portraits')">Portraits</button>
+        <button onclick="filterGallery('cars')">Cars</button>
+        <button onclick="filterGallery('music')">Music Videos</button>
+        <button onclick="filterGallery('realestate')">Real Estate</button>
+      </div>
+
+      <!-- Wedding Gallery -->
+      <div class="gallery-section active" id="weddings">
+        <h3>Weddings</h3>
+        <div class="swiper weddingSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Wedding 1</div>
+            <div class="swiper-slide">Wedding 2</div>
+            <div class="swiper-slide">Wedding 3</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portraits Gallery -->
+      <div class="gallery-section" id="portraits">
+        <h3>Portraits</h3>
+        <div class="swiper portraitSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Portrait 1</div>
+            <div class="swiper-slide">Portrait 2</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cars Gallery -->
+      <div class="gallery-section" id="cars">
+        <h3>Cars</h3>
+        <div class="swiper carSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Car 1</div>
+            <div class="swiper-slide">Car 2</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Music Videos Gallery -->
+      <div class="gallery-section" id="music">
+        <h3>Music Videos</h3>
+        <div class="swiper musicSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">MV Clip 1</div>
+            <div class="swiper-slide">MV Clip 2</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real Estate Gallery -->
+      <div class="gallery-section" id="realestate">
+        <h3>Real Estate</h3>
+        <div class="swiper realestateSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Listing 1</div>
+            <div class="swiper-slide">Listing 2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Bacon Media. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Gallery Filter & Swiper Init -->
+  <script>
+    function filterGallery(id) {
+      const sections = document.querySelectorAll('.gallery-section');
+      sections.forEach((sec) => {
+        sec.classList.remove('active');
+        if (sec.id === id) sec.classList.add('active');
+      });
+    }
+
+    // Swiper setups
+    new Swiper(".weddingSwiper", { slidesPerView: 1.5, spaceBetween: 20, loop: true });
+    new Swiper(".portraitSwiper", { slidesPerView: 1.5, spaceBetween: 20, loop: true });
+    new Swiper(".carSwiper", { slidesPerView: 1.5, spaceBetween: 20, loop: true });
+    new Swiper(".musicSwiper", { slidesPerView: 1.5, spaceBetween: 20, loop: true });
+    new Swiper(".realestateSwiper", { slidesPerView: 1.5, spaceBetween: 20, loop: true });
+  </script>
+</body>
+</html>
