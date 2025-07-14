@@ -1,0 +1,96 @@
+/* Western style color scheme + rustic fonts */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Special Elite', monospace;
+  background-color: #fdf4e3;
+  color: #3e2b1c;
+}
+
+header {
+  background-color: #7a4e2d;
+  color: #fff0d6;
+  padding: 2rem 0;
+  text-align: center;
+  border-bottom: 5px double #fff0d6;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+nav {
+  background-color: #3e2b1c;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+nav a {
+  color: #fdf4e3;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  padding: 3rem 1rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  border-bottom: 2px dashed #7a4e2d;
+  padding-bottom: 0.3rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.socials {
+  margin-top: 1rem;
+}
+
+.socials a {
+  display: inline-block;
+  margin-right: 1rem;
+  color: #7a4e2d;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #3e2b1c;
+  color: #fff0d6;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
