@@ -1,84 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bacon Media | Sizzling Shots. Crispy Quality.</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Bacon Media</h1>
-      <p class="tagline">Sizzling Shots. Crispy Quality.</p>
-    </div>
-  </header>
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
-  <nav>
-    <div class="container">
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+body {
+  margin: 0;
+  font-family: 'Special Elite', monospace;
+  background: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+  background-color: #fdf3dd;
+  color: #3e2b1c;
+  line-height: 1.7;
+}
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About</h2>
-      <div class="decor-line"></div>
-      <p>
-        Based in the heart of the Antelope Valley, Bacon Media is where the Wild West meets cinematic flair. 
-        Whether you're tying the knot, promoting your brand, or showing off your wheels — we capture your moments with sizzling style and crispy quality.
-      </p>
-    </div>
-  </section>
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 1rem;
+}
 
-  <section id="portfolio" class="section">
-    <div class="container">
-      <h2>Portfolio</h2>
-      <div class="decor-line"></div>
-      <div class="portfolio-grid">
-        <div class="card">Coming Soon</div>
-        <div class="card">Your work here</div>
-        <div class="card">Stay tuned...</div>
-      </div>
-    </div>
-  </section>
+header {
+  background-color: #7a4e2d;
+  color: #fff0d6;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  border-bottom: 4px double #fff0d6;
+}
 
-  <section id="services" class="section">
-    <div class="container">
-      <h2>Services</h2>
-      <div class="decor-line"></div>
-      <ul class="services-list">
-        <li>📸 Weddings</li>
-        <li>🧍 Portraits</li>
-        <li>🏡 Real Estate</li>
-        <li>🎬 Promo Videos</li>
-        <li>🎵 Music Videos</li>
-        <li>🚗 Car Photos & Videos</li>
-      </ul>
-    </div>
-  </section>
+header h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 3px;
+}
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact</h2>
-      <div class="decor-line"></div>
-      <p>Email: <a href="mailto:baconmediaofficial@gmail.com">baconmediaofficial@gmail.com</a></p>
-      <p>Phone: <a href="tel:6616663134">(661) 666-3134</a></p>
-      <div class="socials">
-        <a href="https://www.instagram.com/baconmediaofficial" target="_blank" class="social-btn instagram">📷 Instagram</a>
-        <a href="https://www.tiktok.com/@baconmediaofficial" target="_blank" class="social-btn tiktok">🎵 TikTok</a>
-        <a href="https://www.youtube.com/@baconmediaofficial" target="_blank" class="social-btn youtube">▶️ YouTube</a>
-      </div>
-    </div>
-  </section>
+.tagline {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Bacon Media. All rights reserved.</p>
-    </div>
-  </footer>
-</body>
-</html>
+nav {
+  background-color: #3e2b1c;
+  padding: 0.75rem;
+  text-align: center;
+  border-bottom: 2px dashed #fff0d6;
+}
+
+nav a {
+  color: #fdf4e3;
+  text-decoration: none;
+  margin: 0 1.2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc88;
+}
+
+.section {
+  padding: 3rem 1rem;
+  background-color: rgba(255,255,255,0.8);
+  margin: 2rem 0;
+  border: 1px solid #d2a679;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.decor-line {
+  width: 100px;
+  height: 3px;
+  background-color: #7a4e2d;
+  margin: 0.5rem 0 1.5rem;
+}
+
+ul.services-list {
+  list-style: none;
+  padding: 0;
+}
+
+.services-list li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid #7a4e2d;
+  padding-left: 1rem;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background-color: #fffaf0;
+  border: 2px dashed #a86c3f;
+  padding: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  color: #5a3a1b;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #fdf0dc;
+}
+
+.socials {
+  margin-top: 1.5rem;
+}
+
+.social-btn {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #7a4e2d;
+  border-radius: 5px;
+  color: #7a4e2d;
+  background-color: #fff6eb;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.social-btn:hover {
+  background-color: #7a4e2d;
+  color: #fff6eb;
+  border-color: #5a3a1b;
+}
+
+footer {
+  background-color: #3e2b1c;
+  color: #fff0d6;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+}
