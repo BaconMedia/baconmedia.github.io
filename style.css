@@ -1,96 +1,84 @@
-/* Western style color scheme + rustic fonts */
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bacon Media | Sizzling Shots. Crispy Quality.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Bacon Media</h1>
+      <p class="tagline">Sizzling Shots. Crispy Quality.</p>
+    </div>
+  </header>
 
-body {
-  margin: 0;
-  font-family: 'Special Elite', monospace;
-  background-color: #fdf4e3;
-  color: #3e2b1c;
-}
+  <nav>
+    <div class="container">
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-header {
-  background-color: #7a4e2d;
-  color: #fff0d6;
-  padding: 2rem 0;
-  text-align: center;
-  border-bottom: 5px double #fff0d6;
-}
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About</h2>
+      <div class="decor-line"></div>
+      <p>
+        Based in the heart of the Antelope Valley, Bacon Media is where the Wild West meets cinematic flair. 
+        Whether you're tying the knot, promoting your brand, or showing off your wheels — we capture your moments with sizzling style and crispy quality.
+      </p>
+    </div>
+  </section>
 
-header h1 {
-  font-size: 3rem;
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="decor-line"></div>
+      <div class="portfolio-grid">
+        <div class="card">Coming Soon</div>
+        <div class="card">Your work here</div>
+        <div class="card">Stay tuned...</div>
+      </div>
+    </div>
+  </section>
 
-.tagline {
-  font-style: italic;
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-}
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="decor-line"></div>
+      <ul class="services-list">
+        <li>📸 Weddings</li>
+        <li>🧍 Portraits</li>
+        <li>🏡 Real Estate</li>
+        <li>🎬 Promo Videos</li>
+        <li>🎵 Music Videos</li>
+        <li>🚗 Car Photos & Videos</li>
+      </ul>
+    </div>
+  </section>
 
-nav {
-  background-color: #3e2b1c;
-  padding: 0.5rem;
-  text-align: center;
-}
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="decor-line"></div>
+      <p>Email: <a href="mailto:baconmediaofficial@gmail.com">baconmediaofficial@gmail.com</a></p>
+      <p>Phone: <a href="tel:6616663134">(661) 666-3134</a></p>
+      <div class="socials">
+        <a href="https://www.instagram.com/baconmediaofficial" target="_blank" class="social-btn instagram">📷 Instagram</a>
+        <a href="https://www.tiktok.com/@baconmediaofficial" target="_blank" class="social-btn tiktok">🎵 TikTok</a>
+        <a href="https://www.youtube.com/@baconmediaofficial" target="_blank" class="social-btn youtube">▶️ YouTube</a>
+      </div>
+    </div>
+  </section>
 
-nav a {
-  color: #fdf4e3;
-  text-decoration: none;
-  margin: 0 1rem;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.section {
-  padding: 3rem 1rem;
-}
-
-.container {
-  max-width: 900px;
-  margin: auto;
-}
-
-h2 {
-  border-bottom: 2px dashed #7a4e2d;
-  padding-bottom: 0.3rem;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  padding: 0.5rem 0;
-  font-size: 1.1rem;
-}
-
-.socials {
-  margin-top: 1rem;
-}
-
-.socials a {
-  display: inline-block;
-  margin-right: 1rem;
-  color: #7a4e2d;
-  text-decoration: none;
-  font-size: 1.1rem;
-}
-
-.socials a:hover {
-  text-decoration: underline;
-}
-
-footer {
-  background-color: #3e2b1c;
-  color: #fff0d6;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-  font-size: 0.9rem;
-}
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Bacon Media. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
