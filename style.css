@@ -192,7 +192,11 @@ footer {
 
 .swiper-slide img {
   width: 100%;
+  max-width: 600px;
   height: auto;
   border-radius: 10px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
