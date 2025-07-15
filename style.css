@@ -189,3 +189,10 @@ footer {
     justify-content: flex-start;
   }
 }
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+}
