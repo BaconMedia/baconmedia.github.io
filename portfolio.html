@@ -61,6 +61,28 @@
     }
   </style>
 </head>
+  <!-- Lightbox Viewer Script -->
+<div class="lightbox-overlay" id="lightbox">
+  <img src="" alt="Full Size Image" />
+</div>
+
+<script>
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImage = lightbox.querySelector("img");
+
+  document.querySelectorAll(".lightbox-link").forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      lightboxImage.src = this.href;
+      lightbox.style.display = "flex";
+    });
+  });
+
+  lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+    lightboxImage.src = "";
+  });
+</script>
 <body>
   <header>
   <div class="container header-flex">
@@ -99,84 +121,103 @@
 
     <!-- Weddings -->
     <div class="gallery-section active" id="weddings">
-      <h3>Weddings</h3>
-      <div class="swiper weddingSwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="images/wedding1.jpg" alt="Wedding Photo 1" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/wedding2.jpg" alt="Wedding Photo 2" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/wedding3.jpg" alt="Wedding Photo 3" />
-          </div>
-        </div>
+  <h3>Weddings</h3>
+  <div class="swiper weddingSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="images/wedding1.jpg" class="lightbox-link">
+          <img src="images/wedding1.jpg" alt="Wedding Photo 1" />
+        </a>
       </div>
-    </div>
-
-    <!-- Portraits -->
-    <div class="gallery-section" id="portraits">
-      <h3>Portraits</h3>
-      <div class="swiper portraitSwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="images/portrait1.JPG" alt="Portrait 1" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/portrait2.JPG" alt="Portrait 2" />
-          </div>
-        </div>
+      <div class="swiper-slide">
+        <a href="images/wedding2.jpg" class="lightbox-link">
+          <img src="images/wedding2.jpg" alt="Wedding Photo 2" />
+        </a>
       </div>
-    </div>
-
-    <!-- Cars -->
-    <div class="gallery-section" id="cars">
-      <h3>Cars</h3>
-      <div class="swiper carSwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="images/car1.JPG" alt="Car Photo 1" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/car2.JPG" alt="Car Photo 2" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Music Videos -->
-    <div class="gallery-section" id="music">
-      <h3>Music Videos</h3>
-      <div class="swiper musicSwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="images/music1.jpg" alt="Music Video Still 1" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/music2.jpg" alt="Music Video Still 2" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Real Estate -->
-    <div class="gallery-section" id="realestate">
-      <h3>Real Estate</h3>
-      <div class="swiper realestateSwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="images/realestate1.jpg" alt="Real Estate Photo 1" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/realestate2.jpg" alt="Real Estate Photo 2" />
-          </div>
-        </div>
+      <div class="swiper-slide">
+        <a href="images/wedding3.jpg" class="lightbox-link">
+          <img src="images/wedding3.jpg" alt="Wedding Photo 3" />
+        </a>
       </div>
     </div>
   </div>
-</section>
+</div>
 
+    <!-- Portraits -->
+    <div class="gallery-section" id="portraits">
+  <h3>Portraits</h3>
+  <div class="swiper portraitSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="images/portrait1.JPG" class="lightbox-link">
+          <img src="images/portrait1.JPG" alt="Portrait 1" />
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="images/portrait2.JPG" class="lightbox-link">
+          <img src="images/portrait2.JPG" alt="Portrait 2" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Cars -->
+    <div class="gallery-section" id="cars">
+  <h3>Cars</h3>
+  <div class="swiper carSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="images/car1.JPG" class="lightbox-link">
+          <img src="images/car1.JPG" alt="Car Photo 1" />
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="images/car2.JPG" class="lightbox-link">
+          <img src="images/car2.JPG" alt="Car Photo 2" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Music Videos -->
+    <div class="gallery-section" id="music">
+  <h3>Music Videos</h3>
+  <div class="swiper musicSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="images/music1.jpg" class="lightbox-link">
+          <img src="images/music1.jpg" alt="Music Video Still 1" />
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="images/music2.jpg" class="lightbox-link">
+          <img src="images/music2.jpg" alt="Music Video Still 2" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Real Estate -->
+    <div class="gallery-section" id="realestate">
+  <h3>Real Estate</h3>
+  <div class="swiper realestateSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="images/realestate1.jpg" class="lightbox-link">
+          <img src="images/realestate1.jpg" alt="Real Estate Photo 1" />
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="images/realestate2.jpg" class="lightbox-link">
+          <img src="images/realestate2.jpg" alt="Real Estate Photo 2" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
   <footer>
     <div class="container">
