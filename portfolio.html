@@ -82,76 +82,100 @@
     </div>
   </nav>
 
-  <section class="section">
-    <div class="container">
-      <h2>Portfolio</h2>
-      <div class="decor-line"></div>
+<!-- Replace your current gallery sections with this -->
+<section class="section">
+  <div class="container">
+    <h2>Portfolio</h2>
+    <div class="decor-line"></div>
 
-      <div class="filter-buttons">
-        <button onclick="filterGallery('weddings')">Weddings</button>
-        <button onclick="filterGallery('portraits')">Portraits</button>
-        <button onclick="filterGallery('cars')">Cars</button>
-        <button onclick="filterGallery('music')">Music Videos</button>
-        <button onclick="filterGallery('realestate')">Real Estate</button>
-      </div>
+    <div class="filter-buttons">
+      <button onclick="filterGallery('weddings')">Weddings</button>
+      <button onclick="filterGallery('portraits')">Portraits</button>
+      <button onclick="filterGallery('cars')">Cars</button>
+      <button onclick="filterGallery('music')">Music Videos</button>
+      <button onclick="filterGallery('realestate')">Real Estate</button>
+    </div>
 
-      <!-- Wedding Gallery -->
-      <div class="gallery-section active" id="weddings">
-        <h3>Weddings</h3>
-        <div class="swiper weddingSwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">Wedding 1</div>
-            <div class="swiper-slide">Wedding 2</div>
-            <div class="swiper-slide">Wedding 3</div>
+    <!-- Weddings -->
+    <div class="gallery-section active" id="weddings">
+      <h3>Weddings</h3>
+      <div class="swiper weddingSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/wedding1.jpg" alt="Wedding Photo 1" />
           </div>
-        </div>
-      </div>
-
-      <!-- Portraits Gallery -->
-      <div class="gallery-section" id="portraits">
-        <h3>Portraits</h3>
-        <div class="swiper portraitSwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">Portrait 1</div>
-            <div class="swiper-slide">Portrait 2</div>
+          <div class="swiper-slide">
+            <img src="images/wedding2.jpg" alt="Wedding Photo 2" />
           </div>
-        </div>
-      </div>
-
-      <!-- Cars Gallery -->
-      <div class="gallery-section" id="cars">
-        <h3>Cars</h3>
-        <div class="swiper carSwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">Car 1</div>
-            <div class="swiper-slide">Car 2</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Music Videos Gallery -->
-      <div class="gallery-section" id="music">
-        <h3>Music Videos</h3>
-        <div class="swiper musicSwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">MV Clip 1</div>
-            <div class="swiper-slide">MV Clip 2</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Real Estate Gallery -->
-      <div class="gallery-section" id="realestate">
-        <h3>Real Estate</h3>
-        <div class="swiper realestateSwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">Listing 1</div>
-            <div class="swiper-slide">Listing 2</div>
+          <div class="swiper-slide">
+            <img src="images/wedding3.jpg" alt="Wedding Photo 3" />
           </div>
         </div>
       </div>
     </div>
-  </section>
+
+    <!-- Portraits -->
+    <div class="gallery-section" id="portraits">
+      <h3>Portraits</h3>
+      <div class="swiper portraitSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/portrait1.jpg" alt="Portrait 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/portrait2.jpg" alt="Portrait 2" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cars -->
+    <div class="gallery-section" id="cars">
+      <h3>Cars</h3>
+      <div class="swiper carSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/car1.jpg" alt="Car Photo 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/car2.jpg" alt="Car Photo 2" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Music Videos -->
+    <div class="gallery-section" id="music">
+      <h3>Music Videos</h3>
+      <div class="swiper musicSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/music1.jpg" alt="Music Video Still 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/music2.jpg" alt="Music Video Still 2" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Real Estate -->
+    <div class="gallery-section" id="realestate">
+      <h3>Real Estate</h3>
+      <div class="swiper realestateSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/realestate1.jpg" alt="Real Estate Photo 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/realestate2.jpg" alt="Real Estate Photo 2" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <footer>
     <div class="container">
