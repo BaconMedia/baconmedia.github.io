@@ -214,3 +214,11 @@ footer {
   max-height: 400px;
   overflow: hidden;
 }
+
+.map-container {
+  margin-top: 3rem;
+  padding: 1rem;
+  border: 2px solid #7a4e2d;
+  border-radius: 10px;
+  background: #fff0e6;
+}
